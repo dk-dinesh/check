@@ -1,0 +1,31 @@
+.slider, .slick-arrow {
+	display: flex;
+}
+
+.slider .items {
+	margin: 50px;
+	position: relative;
+}
+
+.slider .items .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.64)
+}
+
+.slider .slick-center .overlay {
+	opacity: 0;
+}
+
+.slider .items iframe {
+	transition: all linear .3s;
+}
+
+.slider .slick-center iframe {
+	transform: scale(1.2);
+}
+
+.slick-arrow {
+	align-items: center;
+}
