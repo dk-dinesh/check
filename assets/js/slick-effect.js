@@ -9,5 +9,29 @@ $(document).ready(function () {
 		prevArrow: "<div class='slick-next'><i class='fa fa-arrow-circle-left'></i></div>",
 		centerMode: true,
 		centerPadding: '0',
+		responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+
+  ]
 	});
 });

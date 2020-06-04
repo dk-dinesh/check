@@ -1,4 +1,10 @@
 /* Slider */
+.slider-contain
+{
+    width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+}
 .slick-slider
 {
     position: relative;
