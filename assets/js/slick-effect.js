@@ -5,8 +5,8 @@ $(document).ready(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: true,
-		nextArrow: "<div class='slick-prev'><i class='fa fa-arrow-circle-right'></i></div>",
-		prevArrow: "<div class='slick-next'><i class='fa fa-arrow-circle-left'></i></div>",
+		prevArrow: "<img class='a-left control-c prev slick-prev' src='assets/img/left-arrow.png'>",
+    	nextArrow:"<img class='a-right control-c next slick-next' src='assets/img/right-arrow.png'>",
 		centerMode: true,
 		centerPadding: '0',
 		responsive: [

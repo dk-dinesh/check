@@ -123,3 +123,8 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+.control-c {
+    width: 30px;
+    height: 30px;
+    margin:auto;
+}
