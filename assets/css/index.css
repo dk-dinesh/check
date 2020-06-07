@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
-body {
+body { 
 	height: 100%;
 	font-family: "Josefin Sans", sans-serif;
 	overflow-x:hidden !important;
@@ -13,55 +13,9 @@ body {
 	padding: 0px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	background: black !important;
+	background: radial-gradient(85.6% 215.15% at 22.6% 18.1%, #090909 0%, #242424 100%);
 }
-/*BODY CSS ENDS*/
-  .swiper-container {
-      width: 100%;
-      height: 100%;
-      padding: 10px;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      padding: 10px;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-.iframe-size{
-	height: 350px;
-	width: 500px;
-}
-.swiper-pagination{
-	color: white !important;
-}
-@media all and (max-width: 600px) and (min-width: 300px){
-	.iframe-size{
-	height: 280px;
-	width: 330px;
-	}
-	#youtube-thumbnail img{
-		-webkit-box-flex: 0 !important;
-		    -ms-flex: 0 1 300px !important;
-		        flex: 0 1 300px !important;
-	}
-}
-@media all and (min-width: 1400px){
-	.iframe-size{
-	height: 500px;
-	width: 750px;
-	}	
-}
-
+/*BODY CSS ENDS*/ 
 /*NAVBAR CSS*/
 
 #logo {
@@ -76,7 +30,6 @@ body {
 	padding: 0px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	background: black !important;
 	}
 	.navbar-text {
 		display: inline-block;
@@ -107,7 +60,7 @@ body {
 	color: white !important;
 }
 .navbar {
-	background-color: black;
+	background-color: #131313;
 }
 /*NAVBAR CSS ENDS*/
 /*HOME CSS*/
@@ -365,7 +318,7 @@ body {
 	line-height: 48px;
 	color: #141414;
 	text-decoration: none;
-}
+	}
 }
 
 /*HOME SECTION END*/
@@ -596,8 +549,50 @@ body {
 	height: 99px;
 	border-radius: 50px;
 	left: -18px;
+	-webkit-filter: grayscale(40%);
+	        filter: grayscale(40%);
+	-webkit-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 	position: relative;
 }
+
+.speakers-icon:hover {
+	-webkit-transform: scale(1.25);
+	    -ms-transform: scale(1.25);
+	        transform: scale(1.25);
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: -webkit-transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
+}
+@media all and (max-width: 600px) {
+	.speakers-icon:hover {
+		-webkit-transform: scale(1.15);
+		    -ms-transform: scale(1.15);
+		        transform: scale(1.15);
+		-webkit-transition: -webkit-transform 0.3s ease-in-out;
+		transition: -webkit-transform 0.3s ease-in-out;
+		-o-transition: transform 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	}
+}
+.speakers-icon:hover:after {
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
 .speakers-data-1 {
 	font-family: 'Work Sans', sans-serif;
 	font-style: normal;
@@ -689,8 +684,12 @@ body {
 	-webkit-box-shadow: 5px 10px 20px #000;
 	        box-shadow: 5px 10px 20px #000;
 	border-radius: 2px;
-	top: -1058px;
-	right: -808px;
+	top: -758px;
+	right: -40px;
+	text-align: center;
+	display: flex;
+	text-align: center;
+	margin: auto;
 }
 #register-button-2 a {
 	font-family: 'Work Sans', sans-serif;
@@ -700,6 +699,7 @@ body {
 	line-height: 56px;
 	color: #141414;
 	text-decoration: none;
+	margin: auto !important;
 }
 #mountain-3 {
 	width: 953px;
@@ -726,19 +726,6 @@ body {
     left: 13px;
 }
 
-#register-button-2 {
-    position: relative;
-    width: 330px;
-    height: 55px;
-    text-align: center;
-    background: #EFEFEF;
-    -webkit-box-shadow: 5px 10px 20px #000;
-            box-shadow: 5px 10px 20px #000;
-    border-radius: 2px;
-    top: -758px;
-    right: -48px;
-}
-
 #mountain-3 {
     width: 953px;
     height: 736px;
@@ -760,7 +747,7 @@ body {
 		position: relative;
 		color: #EFEFEF;
 		left: 55px;
-	}
+	}	
 }
 /*SPEAKER CSS END*/
 /*HIGHLIGHTS SECTION*/
@@ -811,13 +798,85 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-#youtube-thumbnail img {
+#youtube-thumbnail iframe {
 	border-radius: 12px;
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 400px;
 	        flex: 0 1 400px;
 }
-
+.iframe-size{
+	height: 300px;
+	width: 550px;
+}
+.carousel-iframe-size{
+	height: 195px;
+	width: 348px;
+}
+@media all and (max-width: 570px) and (min-width: 350px){
+	.iframe-size{
+	height: 280px !important;
+	width: 330px !important;
+	}
+	.carousel-iframe-size{
+	height: 190px;
+	width: 232px;
+	}
+	#youtube-thumbnail iframe{
+		-webkit-box-flex: 0 !important;
+		    -ms-flex: 0 1 300px !important;
+		        flex: 0 1 300px !important;
+	}
+	#video-button {
+		width: 320px !important;
+		height: 48px !important;
+	}
+	#video-button a {
+		font-size: 18px !important;
+		line-height: 48px !important;
+	}
+	#register-button-2 {
+		width: 320px !important;
+		height: 48px !important;
+		right: -15px !important;
+	}
+	#register-button-2 a {
+		font-size: 18px !important;
+		line-height: 48px !important;
+	}
+}
+@media all and (min-width: 1100px){
+	.iframe-size{
+	height: 600px;
+	width: 750px;
+	}	
+}
+@media all and (max-width: 350px){
+	.iframe-size{
+	height: 200px !important;
+	width: 250px !important;
+	}
+	.carousel-iframe-size{
+	height: 150px;
+	width: 200px;
+	}
+	#video-button {
+		width: 250px !important;
+		height: 44px !important;
+	}
+	#video-button a {
+		font-size: 14px !important;
+		line-height: 44px !important;
+	}
+	#register-button-2 {
+		width: 250px !important;
+		height: 44px !important;
+		right: -15px !important;
+	}
+	#register-button-2 a {
+		font-size: 14px !important;
+		line-height: 44px !important;
+	}
+}	
 #video-button {
 	position: relative;
 	width: 378px;
@@ -827,16 +886,19 @@ body {
 	-webkit-box-shadow: 5px 10px 20px #000;
 	        box-shadow: 5px 10px 20px #000;
 	border-radius: 4px;
-	top: 55px;
-	left: 497px;
+	margin: auto ;
+	margin-top: 10px;
+	display: flex;
+	text-align: center;
 }
 #video-button a {
 	font-family: 'Work Sans', sans-serif;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 17px;
+	font-size: 21px;
 	line-height: 56px;
 	color: #141414;
+	margin: auto !important;
 	text-decoration: none;
 }
 #mountain-4 {
@@ -876,8 +938,6 @@ body {
 	        flex: 0 0 50px;
 	width: 239px;
 	background: #EFEFEF;
-	-webkit-box-shadow: 5px 10px 20px #000;
-	        box-shadow: 5px 10px 20px #000;
 	border-radius: 3px;
 	margin: auto;
 	text-align: center;
@@ -930,38 +990,6 @@ body {
     height: 73px;
     margin: auto;
 }
-
-#youtube-thumbnail img {
-	border-radius: 12px;
-	/*flex: 0 1 350px;*/
-	width: 405px;
-}
-
-#video-button {
-    position: relative;
-    width: 288px;
-    height: 55px;
-    text-align: center;
-    background: #EFEFEF;
-    -webkit-box-shadow: 5px 10px 20px #000;
-            box-shadow: 5px 10px 20px #000;
-    border-radius: 4px;
-    top: 55px;
-    left: 57px;
-}
-}
-@media only screen and (max-width: 1200px) and (min-width: 700px) {
-	#video-button {
-		position: relative;
-		width: 288px;
-		height: 55px;
-		text-align: center;
-		background: #EFEFEF;
-		-webkit-box-shadow: 5px 10px 20px #000;
-		        box-shadow: 5px 10px 20px #000;
-		border-radius: 4px;
-		left: 265px;
-	}
 }
 /*HIGHLIGHTS SECTION*/
 /*FOOTER CSS*/
@@ -971,6 +999,7 @@ body {
 	background:#131313;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: normal;
+	box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.75);
 }
 #footer .footer-child span {
 	text-align: center;
