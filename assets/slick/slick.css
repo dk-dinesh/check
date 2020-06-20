@@ -8,9 +8,9 @@
 .slick-slider
 {
     position: relative;
-
     display: block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -27,7 +27,6 @@
 .slick-list
 {
     position: relative;
-
     display: block;
     overflow: hidden;
 
@@ -48,9 +47,7 @@
 .slick-slider .slick-list
 {
     -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
 
@@ -59,7 +56,6 @@
     position: relative;
     top: 0;
     left: 0;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +108,7 @@
 {
     visibility: hidden;
 }
-.slick-vertical .slick-slide
+.slick-vertical .slick-slide 
 {
     display: block;
 
@@ -123,8 +119,50 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.control-c {
+.control-c-left{
     width: 30px;
     height: 30px;
-    margin:auto;
+    margin: 0% 2% 10% 5%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+
 }
+.control-c-right{
+    width: 30px;
+    height: 30px;
+    margin: 0% 5% 10% 2%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+
+}
+
+@media all and (min-width: 681px) and (max-width: 1200px){
+    .control-c-left{
+        width: 40px;
+        height: 40px;
+        margin: 0% 1% 10% 5% ;
+        align-items: center;
+    }
+    .control-c-right{
+        width: 40px;
+        height: 40px;
+        margin: 0% 5% 10% 1%;
+        align-items: center;
+    }
+  
+}
+@media all and (min-width: 1201px){
+  
+    .control-c-left{
+        width: 40px;
+        height: 40px;
+        margin: 0% 1% 10% 5%;
+    }
+    .control-c-right{
+        width: 40px;
+        height: 40px;
+        margin: 0% 5% 10% 1%;
+    }
+} 
